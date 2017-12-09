@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "BP.tf Enhancement",
+  "version": "0.0",
+  //"default_locale": "en",
+  "description": "Extension to make using backpack.tf much more effecient",
+  "page_action": {}, // For use when telling use what pages this extention uses
+  "commands": {}, // For specifying keybinds
+  "content_scripts": [ // Used to specify scripts for specific pages. Can be used to run special script when viewing item information or a bp.tf profile
+    {
+      "matches": ["*://backpack.tf/*"],
+      "js": ["jquery.js", "src.js"]
+    }
+  ], 
+  "offline_enabled": false
+  //"omnibox": {} //look into for better searching 
+}
